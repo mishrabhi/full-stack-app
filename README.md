@@ -54,4 +54,4 @@ This project is a full-stack application built using React for the frontend and 
 
 ### Deployed link:
 
-Full-Stack_App[https://full-stack-4s56jonms-mishrabhis-projects.vercel.app/]
+[Full-Stack App](https://full-stack-4s56jonms-mishrabhis-projects.vercel.app/)

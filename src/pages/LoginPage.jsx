@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/authContext";
+const API_URL = import.meta.env.VITE_BACKEND_URL;
 
 const Login = () => {
   const [credentials, setCredentials] = useState({
@@ -20,10 +21,7 @@ const Login = () => {
     e.preventDefault();
     console.log("Form Data sent to backend:", credentials);
     try {
-      const res = await axios.post(
-        "http://localhost:1234/api/auth/login",
-        credentials
-      );
+      const res = await axios.post(`${API_URL}/api/auth/login`, credentials);
       console.log("Backend Response:", res.data);
 
       // Use login function from AuthContext
